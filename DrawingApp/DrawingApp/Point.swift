@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 class Point: CustomStringConvertible {
     private var positionX: Double
     private var positionY: Double

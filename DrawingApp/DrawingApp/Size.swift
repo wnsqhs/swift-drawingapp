@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 class Size: CustomStringConvertible {
     private var width: Double
     private var height: Double

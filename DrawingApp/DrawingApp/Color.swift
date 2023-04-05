@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 class Color: CustomStringConvertible {
     private var red: Int
     private var green: Int
@@ -15,13 +16,6 @@ class Color: CustomStringConvertible {
         self.red = red
         self.green = green
         self.blue = blue
-    }
-    
-    convenience init() {
-        let red: Int = Int.random(in: 0...255)
-        let green: Int = Int.random(in: 0...255)
-        let blue: Int = Int.random(in: 0...255)
-        self.init(red: red, green: green, blue: blue)
     }
     
     var description: String {
