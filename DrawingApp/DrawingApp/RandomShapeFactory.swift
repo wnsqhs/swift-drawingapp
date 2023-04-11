@@ -7,34 +7,20 @@
 
 import Foundation
 
-class RandomShapeFactory: ShapeMethod {
+class RandomShapeFactory: AbstractShapeFactory {
+    private let CommonConstituent: CommonConstituent
+    
+    init(CommonConstituent: CommonConstituent) {
+        self.CommonConstituent = CommonConstituent
+    }
+    
     func createRectangle() -> Rectangle {
         let id = RandomShapeFactory.createID()
         let size = RandomShapeFactory.createSize()
-        let point = RandomShapeFactory.createPoint(width: ScreenSize.screenWidth, height: ScreenSize.screenHeight)
-        let color = RandomShapeFactory.createColor()
-        let alpha = RandomShapeFactory.createAlpha()
+        let point = CommonConstituent.createRandomPoint(width: ScreenSize.screenWidth, height: ScreenSize.screenHeight)
+        let color = CommonConstituent.createRandomColor()
+        let alpha = CommonConstituent.createRandomAlpha()
         return Rectangle(id: id, size: size, point: point, color: color, alpha: alpha)
-    }
-    
-    static func createAlpha() -> Alpha {
-        if let randomAlpha = Alpha.allCases.randomElement() {
-            return randomAlpha
-        }
-        return Alpha.one
-    }
-    
-    static func createColor() -> Color {
-        let r = Int.random(in: 0...255)
-        let b = Int.random(in: 0...255)
-        let g = Int.random(in: 0...255)
-        return Color(red: r, green: g, blue: b)
-    }
-    
-    static func createPoint(width: CGFloat, height: CGFloat) -> Point {
-        let randomPositionX = Double.random(in: 0...width)
-        let randomPositionY = Double.random(in: 0...height)
-        return Point(positionX: randomPositionX, positionY: randomPositionY)
     }
     
     static func createID() -> ID {
