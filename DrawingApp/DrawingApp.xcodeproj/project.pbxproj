@@ -85,25 +85,49 @@
 				2A33F9B929D1309700CED556 /* AppDelegate.swift */,
 				2A33F9BB29D1309700CED556 /* SceneDelegate.swift */,
 				2A33F9BD29D1309700CED556 /* ViewController.swift */,
-				2A161FEE29DD191400D1596A /* CommonConstituentProtocol.swift */,
-				2A560F3829E5B8D300C49289 /* RandomShapeGenerator.swift */,
-				2A560F3C29E5BA9700C49289 /* AbstractShapeFactory.swift */,
-				2A560F3A29E5B9BD00C49289 /* ViewTransformer.swift */,
-				2A560F3629E5B7ED00C49289 /* TransformerProtocol.swift */,
-				2A161FDA29DA982D00D1596A /* Rectangle.swift */,
-				2A161FF029DD196600D1596A /* RandomShapeFactory.swift */,
-				2A161FF229DD7CC000D1596A /* Plane.swift */,
-				2A161FD829DA977700D1596A /* ID.swift */,
-				2A161FE629DA9D3900D1596A /* Size.swift */,
-				2A161FE829DA9DC100D1596A /* Point.swift */,
-				2A161FEA29DA9E8000D1596A /* Color.swift */,
-				2A161FEC29DA9EF500D1596A /* Alpha.swift */,
+				2A560F4329E5CA0F00C49289 /* Class */,
+				2A560F4129E5C9FB00C49289 /* Protocol */,
+				2A560F3E29E5C9A700C49289 /* Model */,
 				2A33F9BF29D1309700CED556 /* Main.storyboard */,
 				2A33F9C229D1309A00CED556 /* Assets.xcassets */,
 				2A33F9C429D1309A00CED556 /* LaunchScreen.storyboard */,
 				2A33F9C729D1309A00CED556 /* Info.plist */,
 			);
 			path = DrawingApp;
+			sourceTree = "<group>";
+		};
+		2A560F3E29E5C9A700C49289 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A161FDA29DA982D00D1596A /* Rectangle.swift */,
+				2A161FF229DD7CC000D1596A /* Plane.swift */,
+				2A161FD829DA977700D1596A /* ID.swift */,
+				2A161FE629DA9D3900D1596A /* Size.swift */,
+				2A161FE829DA9DC100D1596A /* Point.swift */,
+				2A161FEA29DA9E8000D1596A /* Color.swift */,
+				2A161FEC29DA9EF500D1596A /* Alpha.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A560F4129E5C9FB00C49289 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2A161FEE29DD191400D1596A /* CommonConstituentProtocol.swift */,
+				2A560F3C29E5BA9700C49289 /* AbstractShapeFactory.swift */,
+				2A560F3629E5B7ED00C49289 /* TransformerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2A560F4329E5CA0F00C49289 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				2A560F3829E5B8D300C49289 /* RandomShapeGenerator.swift */,
+				2A560F3A29E5B9BD00C49289 /* ViewTransformer.swift */,
+				2A161FF029DD196600D1596A /* RandomShapeFactory.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
