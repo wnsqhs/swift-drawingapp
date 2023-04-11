@@ -8,9 +8,9 @@
 import Foundation
 
 class Color: CustomStringConvertible {
-    private var red: Int
-    private var green: Int
-    private var blue: Int
+    private(set) var red: Int
+    private(set) var green: Int
+    private(set) var blue: Int
     
     init(red: Int, green: Int, blue: Int) {
         self.red = red
