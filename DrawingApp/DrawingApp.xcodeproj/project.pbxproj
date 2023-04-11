@@ -25,6 +25,7 @@
 		2A560F3729E5B7ED00C49289 /* TransformerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A560F3629E5B7ED00C49289 /* TransformerProtocol.swift */; };
 		2A560F3929E5B8D300C49289 /* RandomShapeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A560F3829E5B8D300C49289 /* RandomShapeGenerator.swift */; };
 		2A560F3B29E5B9BD00C49289 /* ViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A560F3A29E5B9BD00C49289 /* ViewTransformer.swift */; };
+		2A560F3D29E5BA9700C49289 /* AbstractShapeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A560F3C29E5BA9700C49289 /* AbstractShapeFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		2A560F3629E5B7ED00C49289 /* TransformerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerProtocol.swift; sourceTree = "<group>"; };
 		2A560F3829E5B8D300C49289 /* RandomShapeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomShapeGenerator.swift; sourceTree = "<group>"; };
 		2A560F3A29E5B9BD00C49289 /* ViewTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTransformer.swift; sourceTree = "<group>"; };
+		2A560F3C29E5BA9700C49289 /* AbstractShapeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractShapeFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				2A33F9BD29D1309700CED556 /* ViewController.swift */,
 				2A161FEE29DD191400D1596A /* CommonConstituentProtocol.swift */,
 				2A560F3829E5B8D300C49289 /* RandomShapeGenerator.swift */,
+				2A560F3C29E5BA9700C49289 /* AbstractShapeFactory.swift */,
 				2A560F3A29E5B9BD00C49289 /* ViewTransformer.swift */,
 				2A560F3629E5B7ED00C49289 /* TransformerProtocol.swift */,
 				2A161FDA29DA982D00D1596A /* Rectangle.swift */,
@@ -176,6 +179,7 @@
 			files = (
 				2A161FEF29DD191400D1596A /* CommonConstituentProtocol.swift in Sources */,
 				2A161FDB29DA982D00D1596A /* Rectangle.swift in Sources */,
+				2A560F3D29E5BA9700C49289 /* AbstractShapeFactory.swift in Sources */,
 				2A33F9BE29D1309700CED556 /* ViewController.swift in Sources */,
 				2A33F9BA29D1309700CED556 /* AppDelegate.swift in Sources */,
 				2A161FF129DD196600D1596A /* RandomShapeFactory.swift in Sources */,
