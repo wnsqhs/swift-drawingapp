@@ -13,7 +13,7 @@
 		2A161FE929DA9DC100D1596A /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A161FE829DA9DC100D1596A /* Point.swift */; };
 		2A161FEB29DA9E8000D1596A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A161FEA29DA9E8000D1596A /* Color.swift */; };
 		2A161FED29DA9EF500D1596A /* Alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A161FEC29DA9EF500D1596A /* Alpha.swift */; };
-		2A161FEF29DD191400D1596A /* ShapeMethodProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A161FEE29DD191400D1596A /* ShapeMethodProtocol.swift */; };
+		2A161FEF29DD191400D1596A /* CommonConstituentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A161FEE29DD191400D1596A /* CommonConstituentProtocol.swift */; };
 		2A161FF129DD196600D1596A /* RandomShapeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A161FF029DD196600D1596A /* RandomShapeFactory.swift */; };
 		2A161FF329DD7CC000D1596A /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A161FF229DD7CC000D1596A /* Plane.swift */; };
 		2A33F9BA29D1309700CED556 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33F9B929D1309700CED556 /* AppDelegate.swift */; };
@@ -31,7 +31,7 @@
 		2A161FE829DA9DC100D1596A /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		2A161FEA29DA9E8000D1596A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		2A161FEC29DA9EF500D1596A /* Alpha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alpha.swift; sourceTree = "<group>"; };
-		2A161FEE29DD191400D1596A /* ShapeMethodProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeMethodProtocol.swift; sourceTree = "<group>"; };
+		2A161FEE29DD191400D1596A /* CommonConstituentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstituentProtocol.swift; sourceTree = "<group>"; };
 		2A161FF029DD196600D1596A /* RandomShapeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomShapeFactory.swift; sourceTree = "<group>"; };
 		2A161FF229DD7CC000D1596A /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		2A33F9B629D1309700CED556 /* DrawingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +77,7 @@
 				2A33F9B929D1309700CED556 /* AppDelegate.swift */,
 				2A33F9BB29D1309700CED556 /* SceneDelegate.swift */,
 				2A33F9BD29D1309700CED556 /* ViewController.swift */,
-				2A161FEE29DD191400D1596A /* ShapeMethodProtocol.swift */,
+				2A161FEE29DD191400D1596A /* CommonConstituentProtocol.swift */,
 				2A161FDA29DA982D00D1596A /* Rectangle.swift */,
 				2A161FF029DD196600D1596A /* RandomShapeFactory.swift */,
 				2A161FF229DD7CC000D1596A /* Plane.swift */,
@@ -165,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A161FEF29DD191400D1596A /* ShapeMethodProtocol.swift in Sources */,
+				2A161FEF29DD191400D1596A /* CommonConstituentProtocol.swift in Sources */,
 				2A161FDB29DA982D00D1596A /* Rectangle.swift in Sources */,
 				2A33F9BE29D1309700CED556 /* ViewController.swift in Sources */,
 				2A33F9BA29D1309700CED556 /* AppDelegate.swift in Sources */,
