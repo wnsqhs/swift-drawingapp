@@ -23,6 +23,7 @@
 		2A33F9C329D1309A00CED556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A33F9C229D1309A00CED556 /* Assets.xcassets */; };
 		2A33F9C629D1309A00CED556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A33F9C429D1309A00CED556 /* LaunchScreen.storyboard */; };
 		2A560F3729E5B7ED00C49289 /* TransformerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A560F3629E5B7ED00C49289 /* TransformerProtocol.swift */; };
+		2A560F3929E5B8D300C49289 /* RandomShapeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A560F3829E5B8D300C49289 /* RandomShapeGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		2A33F9C529D1309A00CED556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A33F9C729D1309A00CED556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A560F3629E5B7ED00C49289 /* TransformerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerProtocol.swift; sourceTree = "<group>"; };
+		2A560F3829E5B8D300C49289 /* RandomShapeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomShapeGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				2A33F9BB29D1309700CED556 /* SceneDelegate.swift */,
 				2A33F9BD29D1309700CED556 /* ViewController.swift */,
 				2A161FEE29DD191400D1596A /* CommonConstituentProtocol.swift */,
+				2A560F3829E5B8D300C49289 /* RandomShapeGenerator.swift */,
 				2A560F3629E5B7ED00C49289 /* TransformerProtocol.swift */,
 				2A161FDA29DA982D00D1596A /* Rectangle.swift */,
 				2A161FF029DD196600D1596A /* RandomShapeFactory.swift */,
@@ -176,6 +179,7 @@
 				2A33F9BC29D1309700CED556 /* SceneDelegate.swift in Sources */,
 				2A161FE929DA9DC100D1596A /* Point.swift in Sources */,
 				2A161FEB29DA9E8000D1596A /* Color.swift in Sources */,
+				2A560F3929E5B8D300C49289 /* RandomShapeGenerator.swift in Sources */,
 				2A161FE729DA9D3900D1596A /* Size.swift in Sources */,
 				2A161FD929DA977700D1596A /* ID.swift in Sources */,
 				2A560F3729E5B7ED00C49289 /* TransformerProtocol.swift in Sources */,

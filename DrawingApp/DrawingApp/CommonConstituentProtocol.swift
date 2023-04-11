@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CommonConstituent {
-    func createPoint(width: CGFloat, height: CGFloat) -> Point
-    func createColor() -> Color
-    func createAlpha() -> Alpha
+    func createRandomPoint(width: CGFloat, height: CGFloat) -> Point
+    func createRandomColor() -> Color
+    func createRandomAlpha() -> Alpha
 }
