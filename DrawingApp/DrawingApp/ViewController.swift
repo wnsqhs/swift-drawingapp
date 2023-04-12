@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         printLog()
+        
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapView(sender:)))
+        self.view.addGestureRecognizer(tapGesture)
     }
     
     func printLog() {
@@ -40,6 +43,11 @@ class ViewController: UIViewController {
         rectangleView.backgroundColor = UIColor(red: transformColor[0], green: transformColor[1], blue: transformColor[2], alpha: transformAlpha)
         
         return rectangleView
+    }
+    
+    @objc func tapView(sender: UITapGestureRecognizer) {
+        let location = sender.location(in: view)
+        let isIncluded = rectanglePlane.IncludedRectangleInCoordinate(coordinate: location)
     }
     
     @IBAction func TappedCreateRectangleButton(_ sender: UIButton) {
