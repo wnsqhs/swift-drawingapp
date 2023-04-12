@@ -9,28 +9,58 @@ import UIKit
 import OSLog
 
 class ViewController: UIViewController {
+    private var rectanglePlane = Plane()
+    private var randomShapeGenerator = RandomShapeGenerator()
+    lazy var shapeFactory = RandomShapeFactory(CommonConstituent: randomShapeGenerator)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let log = Log()
-        log.printLog()
+        printLog()
+        
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapView(sender:)))
+        self.view.addGestureRecognizer(tapGesture)
     }
-}
-
-class Log {
-    let factory = RandomShapeFactory()
     
     func printLog() {
         for i in 1...4 {
-            let rectangleView = factory.creatRectangle()
+            let logRectangle = generateRandomRectangle()
             let logger = Logger(subsystem: "com.Aiden.DrawingApp", category: "ViewController")
-            logger.log("Rect \(i) \(rectangleView.description) ")
+            logger.log("Rect \(i) \(logRectangle.description) ")
         }
+    }
+    
+    func generateRandomRectangle() -> Rectangle {
+        return shapeFactory.createRectangle()
+    }
+    
+    func createViewFromRectangle(figure: Rectangle) -> UIView {
+        let viewIngredients = ViewTransformer(transformRectangle: figure)
+        let transformAlpha = viewIngredients.transformAlpha()
+        let transformColor = viewIngredients.transformColor()
+        let transformPoint = viewIngredients.transformPoint(point: figure.point)
+        
+        let rectangleView = UIView(frame: CGRect(x: transformPoint.x, y: transformPoint.y, width: figure.size.width, height: figure.size.height))
+        rectangleView.backgroundColor = UIColor(red: transformColor[0], green: transformColor[1], blue: transformColor[2], alpha: transformAlpha)
+        
+        return rectangleView
+    }
+    
+    @objc func tapView(sender: UITapGestureRecognizer) {
+        let location = sender.location(in: view)
+        let isIncluded = rectanglePlane.IncludedRectangleInCoordinate(coordinate: location)
+    }
+    
+    @IBAction func TappedCreateRectangleButton(_ sender: UIButton) {
+        let newRectangle = generateRandomRectangle()
+        let rectangleView = createViewFromRectangle(figure: newRectangle)
+        rectanglePlane.add(rectangle: newRectangle)
+        print(rectanglePlane.newRectangleArray)
+        view.addSubview(rectangleView)
+        view.bringSubviewToFront(sender)
     }
 }
 
-func randomPosition() -> Point {
-    let randomPositionX = Double.random(in: 0...UIScreen.main.bounds.width)
-    let randomPositionY = Double.random(in: 0...UIScreen.main.bounds.height)
-    
-    return Point(positionX: randomPositionX, positionY: randomPositionY)
+class ScreenSize {
+    static let screenWidth = (UIScreen.main.bounds.width - 150)
+    static let screenHeight = (UIScreen.main.bounds.height - 120)
 }

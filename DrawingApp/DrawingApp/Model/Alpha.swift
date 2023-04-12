@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 enum Alpha: Int, CaseIterable, CustomStringConvertible {
     case one = 1,
          two,
@@ -18,14 +19,7 @@ enum Alpha: Int, CaseIterable, CustomStringConvertible {
          nine,
          ten
     
-    static func createRandomAlpha() -> Int {
-        if let randomAlpha = Alpha.allCases.randomElement() {
-            return randomAlpha.rawValue
-        }
-        return 1
-    }
-    
     var description: String {
-        return "\(self.rawValue)"
+        return "Alpha \(self.rawValue)"
     }
 }
