@@ -8,8 +8,8 @@
 import Foundation
 
 class Point: CustomStringConvertible {
-    private var positionX: Double
-    private var positionY: Double
+    private(set) var positionX: Double
+    private(set) var positionY: Double
     
     init(positionX: Double, positionY: Double) {
         self.positionX = positionX
