@@ -41,6 +41,15 @@ class ViewController: UIViewController {
         
         return rectangleView
     }
+    
+    @IBAction func TappedCreateRectangleButton(_ sender: UIButton) {
+        let newRectangle = generateRandomRectangle()
+        let rectangleView = createViewFromRectangle(figure: newRectangle)
+        rectanglePlane.add(rectangle: newRectangle)
+        print(rectanglePlane.newRectangleArray)
+        view.addSubview(rectangleView)
+        view.bringSubviewToFront(sender)
+    }
 }
 
 class ScreenSize {
