@@ -9,6 +9,6 @@ import Foundation
 
 protocol Transformer {
     func transformColor() -> [CGFloat]
-    func transformPoint(width: CGFloat, height: CGFloat) -> CGPoint
+    func transformPoint(point: Point) -> CGPoint
     func transformAlpha() -> CGFloat
 }
