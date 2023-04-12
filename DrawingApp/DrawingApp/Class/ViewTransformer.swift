@@ -22,11 +22,8 @@ class ViewTransformer: Transformer {
         return [r,g,b]
     }
 
-    func transformPoint(width: CGFloat, height: CGFloat) -> CGPoint {
-        let transformX = CGFloat.random(in: 0...width)
-        let transformY = CGFloat.random(in: 0...height)
-        
-        return CGPoint(x: transformX, y: transformY)
+    func transformPoint(point: Point) -> CGPoint {
+        return CGPoint(x: CGFloat(point.positionX), y: CGFloat(point.positionY))
     }
     
     func transformAlpha() -> CGFloat {
